@@ -1,4 +1,4 @@
-# Games-AI-Task5
+# Games-AI-Task-5
 Educational Game
 
 Create an educational game, which is an example of AI itself.
