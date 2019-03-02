@@ -16,6 +16,8 @@ while abs(best(1)-objective(1))>precision ||...
 for i=1:size(candidate,1)
 eucl(i) = sqrt(sum((candidate(i,:) - objective) .^ 2));
 end
+%% histogram
+histo=1000-eucl;
 %% select best 5 solutions
 [B, I]=mink(eucl,5);
 best=candidate(I(1),:);
@@ -57,7 +59,7 @@ end
 %% maintanance 
 iter=iter+1;
 message=['Best match = ', num2str(best), ', iteration: ', num2str(iter),' , objective =',num2str(objective)];
-
+%message
 rec=[rec;best];
 %% mutation, if stuck in same solution 
 if rec(iter+1,:)==rec(iter,:)
@@ -75,16 +77,27 @@ end
        end
     end
 %% chart
-    axes1 = axes();
+    figure1 = figure;    
+    axes1 = axes('Parent',figure1);
+    %axes1=subplot(2,1,1);
     hold(axes1,'on');
     plot(rec, 'black','Marker','.');
     xlim(axes1,[1 size(rec,1)]);
     ylim(axes1,[0 255]);
     annotation('textbox',[.15 .6 .3 .3],'String',{message},'FontSize',12,'FitBoxToText','on', 'BackgroundColor','white');
     line([1 size(rec,1)], [objective(1) objective(1)], 'Color','red','LineStyle','--');
-    line([1 size(rec,1)], [objective(2) objective(2)], 'Color','blue','LineStyle','--');
-    line([1 size(rec,1)], [objective(3) objective(3)], 'Color','green','LineStyle','--');
+    line([1 size(rec,1)], [objective(2) objective(2)], 'Color','green','LineStyle','--');
+    line([1 size(rec,1)], [objective(3) objective(3)], 'Color','blue','LineStyle','--');
     linkdata on;
-    drawnow;    
-
+    drawnow;
+    
+    %axes2 = axes('Parent',figure1);
+    %axes2=subplot(2,1,2);
+    %hold(axes2,'on');
+        
+%     bar(histo);
+%     box(axes2,'on');
+%     set(axes2,'XTick',[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]);
+%     linkdata on;
+%     drawnow;    
 end
