@@ -1,6 +1,6 @@
 function [rec,best,iter]=gadove(x,y,z)
 %% initialize
-candidate=round(rand(15,3)*256)-1;
+candidate=round(rand(15,3)*256)-1; %15 броя гадове
 %objective=round(rand(1,3)*256,0)-1;
 objective=[x y z];
 eucl=ones(size(candidate,1),1);
