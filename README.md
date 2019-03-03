@@ -1,6 +1,6 @@
 # Title: Gad Selection
 
-# AI-Task-5:
+# Games-AI-Task-5:
 Create an educational game, which is an example of AI itself.
 
 # Short description:
