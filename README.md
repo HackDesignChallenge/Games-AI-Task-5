@@ -20,7 +20,7 @@ Unity
 
 # Credits:
 
-Story: Angel Marchev
+Story/Gameplay: Angel Marchev
 
 2D Art: Mihaela Komitova
 
