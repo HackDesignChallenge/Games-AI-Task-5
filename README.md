@@ -15,7 +15,7 @@ We have to breed a specific kind of genetic alien devices (GAD) through the proc
 Mouse point and click.
 
 # Software & version:
-Unity 2019.1.0b3
+Unity 2018.3.6f1
 
 # Credits:
 Story/Gameplay: Angel Marchev
