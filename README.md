@@ -8,18 +8,16 @@ We have to breed a specific kind of genetic alien devices (GAD) through the proc
 # Screenshot:
 ![alt text](https://github.com/HackDesignChallenge/Games-AI-Task-5/blob/develop/art-assets/gad_selection_001.png "Title screen")
 
-# Controls:
+# Build:
+[Task 2 build](https://github.com/HackDesignChallenge/Games-AI-Task-5/blob/develop/Task%205.zip)
 
+# Controls:
 Mouse point and click.
 
-
 # Software & version:
-
-Unity 
-
+Unity 2019.1.0b3
 
 # Credits:
-
 Story/Gameplay: Angel Marchev
 
 2D Art: Mihaela Komitova
@@ -36,7 +34,6 @@ Audio: Angel Marchev, Dimitar Atanassov
 The game introduces the players to the evolutional algorithms. Playing as the de-facto-algorithm, they learn the most important phases of the one such algorithm - the multi-stage selection procedure.
 
 # Diversifiers used:
-
 Responsible play - the game aims to solve a real-world (social or scientific) problem.
 
 Night and Day - Integrate “night” and “day” modes that must be switched between as one of the game mechanics.
