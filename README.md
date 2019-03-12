@@ -42,8 +42,6 @@ Stan Lee tribute - the game features comics-style art
 
 Stranger Things - Your game's ambience is inspired by an 80s pop song
 
-Celestial - An option to adjust game speed is included
-
 Not the bees - The mechanic is based on swarm tactics.
 
 Game Legacy - Each playthrough of the game affects the next.
