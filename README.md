@@ -9,13 +9,13 @@ We have to breed a specific kind of genetic alien devices (GAD) through the proc
 ![alt text](https://github.com/HackDesignChallenge/Games-AI-Task-5/blob/master/art-assets/gad_selection_001.png "Title screen")
 
 # Build:
-[Task 2 build](https://github.com/HackDesignChallenge/Games-AI-Task-5/blob/master/Task%205.zip)
+[Task 5 build](https://github.com/HackDesignChallenge/Games-AI-Task-5/blob/master/Task%205.zip)
 
 # Controls:
 Mouse point and click.
 
 # Software & version:
-Unity 2018.3.6f1
+Unity 2019.1.0b3
 
 # Credits:
 Story/Gameplay: Angel Marchev
