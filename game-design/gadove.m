@@ -1,10 +1,11 @@
 function [rec,best,iter]=gadove(x,y,z)
 %% initialize
-candidate=round(rand(15,3)*256)-1; %15 броя гадове
+candidate=round(rand(15,3)*256)-1; %15 бро�? гадове
 %objective=round(rand(1,3)*256,0)-1;
 objective=[x y z];
 eucl=ones(size(candidate,1),1);
 iter=0;
+limit=1000;
 [B, I]=mink(eucl,5);
 best=candidate(I(1),:);
 rec=[0 0 0];
@@ -59,6 +60,9 @@ candidate(15,i)=round(mean([candidate(4,i) candidate(5,i)]));
 end
 %% maintanance 
 iter=iter+1;
+if iter==limit
+    break
+end
 %message=['Best match = ', num2str(best), ', iteration: ', num2str(iter),' , objective =',num2str(objective)];
 %message
 rec=[rec;best];

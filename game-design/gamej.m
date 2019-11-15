@@ -8,6 +8,7 @@ iter=0;
 best=candidate(I(1),:);
 rec=[0 0 0];
 precision=10;
+figure1 = figure;
 %% begin selection, set terminal conditions
 while abs(best(1)-objective(1))>precision ||...
       abs(best(2)-objective(2))>precision ||...
@@ -77,7 +78,7 @@ end
        end
     end
 %% chart
-    figure1 = figure;    
+    figure(figure1);
     axes1 = axes('Parent',figure1);
     %axes1=subplot(2,1,1);
     hold(axes1,'on');
