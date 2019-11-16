@@ -1,7 +1,7 @@
 %%init
 clear all
 tic
-sz=256;
+sz=16;
 colorspace=zeros(sz,sz,sz);
 unfold=zeros(sz^3,4,10);
 for q=1:10
@@ -9,7 +9,6 @@ parfor i=1:sz
     for j=1:sz
         for k=1:sz
             [~,~,colorspace(i,j,k)]=gadove(i,j,k,sz);
-            [i,j,k,q]
         end
     end
 end
@@ -41,8 +40,8 @@ unfold_sum=nansum(unfold,3);
 figure1 = figure;
 axes1 = axes('Parent',figure1);
 hold(axes1,'on');
-area(unfold_sum(:,4),'EdgeColor','none');
-xlim(axes1,[0 size(unfold,1)]);
+area(nansum(,'EdgeColor','none');
+xlim(axes1,[0 4096]);
 box(axes1,'on');
 
 

@@ -1,15 +1,15 @@
-function [rec,best,iter]=gadove(x,y,z)
+function [rec,best,iter]=gadove(x,y,z,sz)
 %% initialize
-candidate=round(rand(15,3)*256)-1; %15 бро�? гадове
-%objective=round(rand(1,3)*256,0)-1;
+candidate=round(rand(15,3)*sz)-1; %15 бро�? гадове
+%objective=round(rand(1,3)*sz,0)-1;
 objective=[x y z];
 eucl=ones(size(candidate,1),1);
 iter=0;
-limit=1000;
+limit=5;
 [B, I]=mink(eucl,5);
 best=candidate(I(1),:);
 rec=[0 0 0];
-precision=10;
+precision=round(0.05*sz);
 %% begin selection, set terminal conditions
 while abs(best(1)-objective(1))>precision ||...
       abs(best(2)-objective(2))>precision ||...
