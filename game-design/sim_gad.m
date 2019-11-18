@@ -45,4 +45,10 @@ area(unfold_sum(:,4),'EdgeColor','none');
 xlim(axes1,[0 size(unfold,1)]);
 box(axes1,'on');
 
-
+mean_color_space=squeeze(nanmean(color_space,1));
+%mean_color_space=squeeze(nanmean(color_space,2));
+%mean_color_space=squeeze(nanmean(color_space,3));
+histogram(mean_color_space)
+mesh(mean_color_space)
+var_color_space=squeeze(nanmean(color_space,2));
+mesh(var_color_space)
